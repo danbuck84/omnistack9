@@ -35,10 +35,10 @@ export default function New({ history }) {
     
     return (
         <form onSubmit={handleSubmit}>
-            <label 
-            id="thumbnail" 
-            style={{ backgroundImage: `url(${preview})` }}
-            className={thumbnail ? 'has-thumbnail' : ''}
+            <label
+                id="thumbnail"
+                style={{ backgroundImage: `url(${preview})` }}
+                className={thumbnail ? 'has-thumbnail' : ''}
             >
                 <input type="file" onChange={event => setThumbnail(event.target.files[0])} />
                 <img src={camera} alt="Select img" />

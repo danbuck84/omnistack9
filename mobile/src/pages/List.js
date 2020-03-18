@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import socketio from 'socket.io-client';
-import { Alert, SafeAreaView, ScrollView, StyleSheet, Image, AsyncStorage, Alert } from 'react-native';
+import { Alert, SafeAreaView, ScrollView, StyleSheet, Image, AsyncStorage } from 'react-native';
+import Constants from 'expo-constants';
 
 import SpotList from '../components/SpotList';
 
@@ -16,7 +17,7 @@ export default function List() {
             })
 
             socket.on('booking_response', booking => {
-                Alert.akert(`Sua reserva em ${booking.spot.company} em ${booking.date} foi ${booking.approved ? 'APROVADA' : 'REJEITADA'}`)
+                Alert.alert(`Sua reserva em ${booking.spot.company} em ${booking.date} foi ${booking.approved ? 'APROVADA' : 'REJEITADA'}`)
             })
         })
     }, []);
