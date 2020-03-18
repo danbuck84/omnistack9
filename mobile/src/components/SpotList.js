@@ -25,7 +25,7 @@ function SpotList({ tech, navigation }) {
 
     return (
         <View style={styles.container}>
-            <Text style={styles.title}>Empresas que usam <Text style={styles.bold}>{tech}</Text></Text>
+            <Text style={styles.title}>Autores que escrevem <Text style={styles.bold}>{tech}</Text></Text>
 
             <FlatList 
                 style={styles.list}

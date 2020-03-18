@@ -48,10 +48,10 @@ async function handleSubmit() {
                     onChangeText={setEmail}
                 />
 
-                <Text style={styles.label}>TECNOLOGIAS *</Text>
+                <Text style={styles.label}>ESTILOS *</Text>
                 <TextInput 
                     style={styles.input}
-                    placeholder="Tecnologias de interesse"
+                    placeholder="Estilos de interesse"
                     placeholderTextColor="#999"
                     autoCapitalize="words"
                     autoCorrect={false}
@@ -60,7 +60,7 @@ async function handleSubmit() {
                 />
 
                 <TouchableOpacity onPress={handleSubmit} style={styles.button}>
-                    <Text style={styles.buttonText}>Encontrar spots</Text>
+                    <Text style={styles.buttonText}>Encontrar livros</Text>
                 </TouchableOpacity>
             </View>
         </KeyboardAvoidingView>
